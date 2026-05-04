@@ -1,0 +1,7 @@
+fastapi==0.107.0
+uvicorn[standard]==0.23.2
+python-dotenv==1.0.1
+faiss-cpu==1.7.4
+langchain==0.1.137
+cohere==5.12.0
+
