@@ -1,0 +1,28 @@
+# FastAPI and Server
+fastapi==0.107.0
+uvicorn[standard]==0.23.2
+
+# Environment Management
+python-dotenv==1.0.1
+
+# Vector Database
+faiss-cpu==1.7.4
+
+# LLM and NLP
+langchain==0.1.137
+langchain-cohere==0.1.9
+cohere==5.12.0
+
+# PDF Processing
+PyMuPDF==1.23.8
+pypdf==4.0.1
+
+# Utilities
+pydantic==2.5.0
+requests==2.31.0
+aiofiles==23.2.1
+
+# Optional: Development and Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+python-multipart==0.0.6

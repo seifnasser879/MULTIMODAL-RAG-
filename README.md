@@ -238,14 +238,4 @@ DEBUG=true
 - [FastAPI Documentation](https://fastapi.tiangolo.com)
 - [LangChain Documentation](https://python.langchain.com)
 
-## 📄 License
 
-This project is open source. Please refer to the LICENSE file for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit pull requests or open issues for bugs and feature requests.
-
----
-
-**Built with ❤️ for researchers and AI enthusiasts**
