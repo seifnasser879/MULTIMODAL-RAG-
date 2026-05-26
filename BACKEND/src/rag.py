@@ -9,11 +9,11 @@ from ingest import create_embedding
 from config import INDEX_DIR, pdf_data, llm
 
 
-if not os.path.exists(INDEX_DIR):
+if not os.path.exists(INDEX_DIR) or not os.listdir(INDEX_DIR):
     print("Index not found. Starting PDF processing and embedding...")
 
     texts = process_pdf(pdf_data)
-    vectorstore=create_embedding(texts)
+    vectorstore, documents = create_embedding(texts)
 
 
 
