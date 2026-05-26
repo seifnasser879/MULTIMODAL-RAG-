@@ -5,7 +5,7 @@ from config import COHEREAPI, llm_temperature , llm
 
 
 
-def describe_with_llm(content: str, content_type: str) -> str:
+def describe_with_llm(content: str, content_type: str, hint: str = None) -> str:
     """Sends extracted data to Cohere for cleaning or summarization."""
     if not content or len(content.strip()) < 5:
         return ""
@@ -17,7 +17,8 @@ def describe_with_llm(content: str, content_type: str) -> str:
     else:
         instruction = "Clean and summarize this text for a RAG system. Remove headers, footers, and noise."
 
-    prompt = f"You are a data analyst.\n\n{instruction}\n\nContent:\n{content}"
+    hint_text = f" [{hint}]" if hint else ""
+    prompt = f"You are a data analyst.\n\n{instruction}{hint_text}\n\nContent:\n{content}"
     response = llm.invoke([HumanMessage(content=prompt)])
     return response.content.strip()
     
