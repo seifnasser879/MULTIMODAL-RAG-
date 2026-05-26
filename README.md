@@ -1,5 +1,7 @@
 # 📚 Multimodal RAG: Attention Is All You Need
 
+![Project Photo](project_photo%20.png)
+
 A Multimodal Retrieval-Augmented Generation (RAG) system that intelligently analyzes the **"Attention Is All You Need"** research paper. This system extracts and indexes both text and visual elements (figures, tables, diagrams), enabling sophisticated semantic search and knowledge generation powered by Cohere.
 
 ## 🚀 Key Features
